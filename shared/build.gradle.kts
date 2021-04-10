@@ -30,7 +30,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("io.insert-koin:koin-core:3.0.1-beta-2")
+                api("io.insert-koin:koin-core:3.0.1-beta-2")
             }
         }
         val commonTest by getting {
