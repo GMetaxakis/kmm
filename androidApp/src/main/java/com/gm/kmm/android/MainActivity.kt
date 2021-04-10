@@ -1,9 +1,9 @@
 package com.gm.kmm.android
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.gm.kmm.Greeting
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.gm.kmm.Greeting
 
 fun greet(): String {
     return Greeting().greeting()
@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val tv: TextView = findViewById(R.id.text_view)
-        tv.text = greet()
+        findViewById<TextView>(R.id.text_view).text = greet()
     }
 }
