@@ -13,5 +13,5 @@ fun initKoin(appDeclaration: KoinAppDeclaration = {}) = startKoin {
 fun initKoin() = initKoin {}
 
 val commonModule = module {
-
+    factory { GetGreetingUseCase(get()) }
 }
